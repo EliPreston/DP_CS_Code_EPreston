@@ -53,3 +53,30 @@ print(base2to10("101"))
 print(base2to10("111111"))
 print(base2to10("10111111"))
 
+
+
+
+
+
+
+# Sum of digits inputted (123 --> 1+2+3)
+
+def sumDigits(a):
+	t = 0
+	for i in str(a): # Converts the number (an int) to str and iterates through each digit in the newly converted string
+		t += int(i)  # Converts the digit that's a string back into an int and adds to the total
+	return t
+
+
+	# # Mr. Miskew's Version; Uses different operators
+	# total = 0
+	# while (a > 0):
+	# 	total = total + a % 10 #access the ones digit
+	# 	a = a // 10
+
+
+# Testing sumDigits
+print(sumDigits(123))
+print(sumDigits(92343))
+print(sumDigits(123456789))
+# print(sumDigits())
