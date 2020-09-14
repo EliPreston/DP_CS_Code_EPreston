@@ -12,20 +12,24 @@
 # # then by integer dividing 375 it chops off the units value leaving 34 as the new num.
 # # This process then repeats until the number integer divded by 10 is 0 at which point it stops.
 # # This allows you to access each of the digits in the number
-# num = 375
+
+
+# a = 123
 # total = 0
+# while (a > 0):
+#     total = total + a%10
+#     a = a//10
+# print(total)
 
-# while (num > 0):
-#     print(num%10)
-#     total = total + num%10
-#     num = num//10
 
-# total = str(total)
-# print("Digits In Number Added Together = " + total)
 
-a = 123
+num = 375
 total = 0
-while (a > 0):
-    total = total + a%10
-    a = a//10
-print(total)
+
+while (num > 0):
+    # print(num%10)
+    total = total + num%10
+    num = num//10
+
+total = str(total)
+print("Digits In Number Added Together = " + total)

@@ -56,9 +56,7 @@ lab_instructions = tk.Label(root, text = "Enter Binary")
 ent_value = tk.Entry(root)
 lab_output = tk.Label(root, text = "***")
 
-
 # Configuration of widgets
-
 
 
 # Places widgets in the window (root)
@@ -68,8 +66,3 @@ lab_output.pack()
 
 root.bind("<Return>", process)
 root.mainloop()
-
-
-
-
-
