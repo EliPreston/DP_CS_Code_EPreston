@@ -2,9 +2,12 @@
 
 def isEven(a):
 
-    if a % 2 == 0:
-        return True
-    return False
+    # if a % 2 == 0:
+    #     return True
+    # return False
+    # A faster way below
+
+    return(a % 2 == 0)
 
 
 # Testing isEven
@@ -83,3 +86,39 @@ def sumDigitsB(a):
 print(sumDigitsB(11111111))
 print(sumDigitsB(92343))
 print(sumDigitsB(123456789))
+
+
+# ScaleElementsA scales an array's numbers up
+def scaleElementsA(a, b):
+
+    for i in b:
+        x = a*i
+        print(x)
+
+
+print(scaleElementsA(2, [2, 4, 6, 8]))
+
+
+# ScaleElementsB scales an array's numbers up in another array
+def scaleElementsB(a, b):
+
+    c = []
+    for i in b:
+        x = a*i
+        c.insert(i, x)
+    return c
+
+
+print(scaleElementsB(3, [1, 2, 3]))
+
+
+# Adding strings together
+def addStringsSmallLarge(a, b):
+
+    if len(b) > len(a):
+        print(b + a)
+    else:
+        print(a + b)
+
+
+print(addStringsSmallLarge("argument", "argument1"))
