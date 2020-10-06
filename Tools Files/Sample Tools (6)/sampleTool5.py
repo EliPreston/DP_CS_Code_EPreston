@@ -10,15 +10,31 @@ Post-conditions;
 
 def reverseWordA(s):
 
-    reverse = []
+    a = ""
 
-    # notation for slicing(start, stop, step) this reverses through the string in this case
-    for i in range(len(s) - 1, - 1, - 1):
-        l = s[i]
-        reverse.append(l)
-
-    print("".join(reverse))
+    for i in range(len(s) - 1, -1, - 1):
+        a += s[i]
+    print(a)
 
 
 s = "cat"
 reverseWordA(s)
+
+
+'''
+Using a list method
+'''
+# def reverseWordA(s):
+
+#     reverse = []
+
+#     # notation for slicing(start, stop, step) this reverses through the string in this case
+#     for i in range(len(s) - 1, - 1, - 1):
+#         l = s[i]
+#         reverse.append(l)
+
+#     print("".join(reverse))
+
+
+# s = "cat"
+# reverseWordA(s)

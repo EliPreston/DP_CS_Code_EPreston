@@ -17,9 +17,8 @@ def findModSum2(lst, a, b):
     for i in lst:
         if MIN + 1 <= i <= MAX - 1:
             SUM += i
-        else:
-            pass
-
+        # else:
+        #     pass
     print(SUM)
 
 

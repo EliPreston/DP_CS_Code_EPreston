@@ -12,7 +12,7 @@ def findModSum3(lst, a, b):
 
     SUM = 0
     for i in lst:
-        if i % 5 == 0 and i % 2 == 0:
+        if i % a == 0 and i % b == 0:
             SUM += i
         else:
             pass

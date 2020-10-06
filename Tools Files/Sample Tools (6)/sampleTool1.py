@@ -15,9 +15,8 @@ def findModSum1(lst):
     for i in lst:
         if i % 3 == 0:
             SUM += i
-            # print(i)
-        else:
-            pass
+        # else:
+        #     pass
     print(SUM)
 
 

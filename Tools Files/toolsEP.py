@@ -79,7 +79,6 @@ print(base2to10("111111"))
 print(base2to10("10111111"))
 
 
-# Sum of digits inputted (123 --> 1+2+3); Using Mod and Div 10
 '''
 Description;
 Parameters;
@@ -93,6 +92,7 @@ Post-conditions;
 def sumDigitsA(a):
 
     total = 0
+    a = int(a)
 
     while (a > 0):
         total = total + a % 10
@@ -209,32 +209,85 @@ def addStringsSmallLarge(a, b):
 print(addStringsSmallLarge("argument", "argument1"))
 
 
-def maxMinSumAvg(lst):
+'''
+Description;
+Parameters;
+Return;
+Pre-conditions;
+Post-conditions;
 
-    MAX = lst[0]
-    MIN = lst[0]
-    SUM = 0
-    AVG = 0
-
-    for i in lst:
-        if i > MAX:
-            MAX = i
-        elif i < MIN:
-            MIN = i
-        else:
-            pass
-
-        SUM += i
-        print(i)
-
-    length = len(lst) + 1
-    # Do + 1 because otherwise its going to divide the sum by 9, but there's 10 numbers (starts at 0, 1, 2, 3 for indices)
-
-    print(length)
-    AVG = SUM/length
-
-    print(MAX, MIN, SUM, AVG)
+'''
 
 
-lst = [234, 2, 4, 3, 274, 78, 12, 90, 144]
-maxMinSumAvg(lst)
+def isPrime(n):
+
+    r = round(n/2)
+    N = int(r + 1)
+    count = 0
+
+    for i in range(2, N, 1):
+
+        if n % i == 0:
+            count += 1
+
+    if count > 0:
+        return False
+    else:
+        return True
+
+
+for i in range(1, 100):
+    number = str(isPrime(i))
+    print(str(i) + " is " + number)
+
+'''
+Description;
+Parameters;
+Return;
+Pre-conditions;
+Post-conditions;
+
+'''
+
+
+def allEven(n):
+
+    N = int(n)
+    EVEN = True
+
+    while (N > 0) and (EVEN == True):
+        if (N % 10) % 2 == 1:
+            EVEN = False
+        N = N // 10
+
+    print(EVEN)
+
+
+allEven(26626464)
+
+
+'''
+Description;
+Parameters;
+Return;
+Pre-conditions;
+Post-conditions;
+
+'''
+
+
+def fibonacciGen(n):
+
+    sequence = [1, 2]
+
+    # while last value in list is less than a
+    while sequence[-1] < n:
+
+        nxt = sequence[-1] + sequence[-2]
+        sequence.append(nxt)
+
+    del sequence[-1]
+    return sequence
+
+
+print(fibonacciGen(10000))
