@@ -120,7 +120,7 @@ Post-conditions; The two passed lists remain unchanged.
 #
 
 '''
-Description;
+Description; Finds the largest population out of a dici
 Parameters;
 Return;
 Pre-conditions;
@@ -130,7 +130,7 @@ Write any tool that incorporates a dictionary. A dictionary
 is the data structure we explored when pulling data from an API.
 You can find syntax information for Python here,
 
-https://www.w3schools.com/python/python_dictionaries.asp
+https://www.w3schools.com/pytxhon/python_dictionaries.asp
 
 '''
 
@@ -152,43 +152,7 @@ def vendingMachine():
             print(n, " --> ", m)
         print("-----")
 
-    selection = input("What would you like? Please select a location.\n")
-
-    for item in vm:
-        if item == selection:
-            print("Item is available.")
-            # print(vm['A1']['item'])
-            break
-        # else:
-            # print("invalid selection")
-            # break
-        if item != selection:
-            print("invalid selection")
-
-    # for i in vm['A1']:
-    #     print(i)
-
-    # for i in vm:
-    #     # print(i)
-    #     for d in vm[i]:
-    #         print(d[])
-    # print(vm['A1']['item'])
-
-    # select = input(("What item would you like? Choose a location.\n"))
-
-    # if select in vm:
-    #     print("available")
-    # else:
-    #     print("unavailable")
-
-
-# d = {
-#     'dict1': {'foo': 1, 'bar': 2},
-#     'dict2': {'baz': 3, 'quux': 4}}
-
-# for i in d:
-#     for j, k in d[i].items():
-#         print(j, "->", k)
+    print("These are the items currently in stock in the vending machine.")
 
 
 vendingMachine()

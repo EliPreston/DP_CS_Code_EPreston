@@ -89,3 +89,62 @@ while (k < N):
 
     # # # lst = [234, 2, 4, 3, 274, 78, 12, 90, 144]
     # # # maxMinSumAvg(lst)
+
+
+def vendingMachine():
+
+    vm = {
+        'A1': {'item': "Lays Chips", "price": "1.50"},
+        'A2': {'item': "Ketchup Chips", 'price': "1.75"},
+        'B1': {'item': "Kitkat", 'price': "2.00"},
+        'B2': {'item': "Snickers", 'price': "2.00"},
+        'C1': {'item': "Water", 'price': "2.50"},
+        'C2': {'item': "Milk", 'price': "1.75"}
+    }
+
+    for i in vm:
+        print(i)
+        for n, m in vm[i].items():
+            print(n, " --> ", m)
+        print("-----")
+
+    selection = input("What would you like? Please select a location.\n")
+
+    for item in vm:
+        if item == selection:
+            print("Item is available.")
+            # print(vm['A1']['item'])
+            break
+        # else:
+            # print("invalid selection")
+            # break
+        if item != selection:
+            print("invalid selection")
+
+    # for i in vm['A1']:
+    #     print(i)
+
+    # for i in vm:
+    #     # print(i)
+    #     for d in vm[i]:
+    #         print(d[])
+    # print(vm['A1']['item'])
+
+    # select = input(("What item would you like? Choose a location.\n"))
+
+    # if select in vm:
+    #     print("available")
+    # else:
+    #     print("unavailable")
+
+
+# d = {
+#     'dict1': {'foo': 1, 'bar': 2},
+#     'dict2': {'baz': 3, 'quux': 4}}
+
+# for i in d:
+#     for j, k in d[i].items():
+#         print(j, "->", k)
+
+
+vendingMachine()

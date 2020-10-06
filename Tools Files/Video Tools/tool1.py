@@ -5,7 +5,7 @@ that are less than the inputted value
 Parameters; Integer n
 Return; Integer SUM
 Pre-conditions; n is an Integer
-Post-conditions; 
+Post-conditions; n/a
 '''
 
 

@@ -1,5 +1,5 @@
 '''
-Description; The method takes a string and jumbles the indexes 
+Description; The method takes a string and jumbles it. 
 Parameters; String s
 Return; String
 Pre-conditions; s is a string of any length.
