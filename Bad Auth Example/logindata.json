@@ -1,0 +1,15 @@
+[
+	{
+		"uID" : "u1@example.com",
+		"password" : "pword1"
+	},
+	{
+		"uID": "u2@example.co",
+		"password": "pword2"
+	},
+	{
+		"uID": "u3@example.com",
+		"password": "pword3"
+	}
+
+]

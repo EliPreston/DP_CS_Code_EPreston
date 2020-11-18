@@ -1,0 +1,54 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+
+    <title>Materialize Example</title>
+    <style></style>
+  </head>
+  <body>
+    <!-- TUTORIAL EXAMPLES -->
+
+    <div class="container">
+      <h2>Modals</h2>
+
+      <a href="#x" class="btn orange modal-trigger">Terms & Cdnditions</a>
+
+      <div class="modal" id="x">
+        <div class="modal-content">
+          <h4>Terms & Conditions</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras in
+            elementum lectus. Quisque fermentum vitae lacus et cursus. Nunc
+            sagittis hendrerit tincidunt. Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. Cras in elementum lectus. Quisque
+            fermentum vitae lacus et cursus. Nunc sagittis hendrerit tincidunt.
+          </p>
+        </div>
+        <div class="modal-footer">
+          <a href="#" class="modal-close btn orange"> Agree & Close</a>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".modal").modal();
+      });
+    </script>
+  </body>
+</html>

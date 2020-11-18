@@ -1,0 +1,58 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+
+    <title>Materialize Example</title>
+  </head>
+  <body>
+    <!-- TUTORIAL EXAMPLES -->
+
+    <div class="container">
+      <h2>Bad Authorization</h2>
+
+      <a href="#x" class="btn orange modal-trigger">Login</a>
+
+      <div class="modal" id="x">
+        <div class="modal-content">
+          <!-- <h4>Login</h4> -->
+          <form action="">
+            <div class="input-field">
+              <i class="material-icons prefix">person</i>
+              <input type="text" id="username">
+              <label for="username">Username...</label>
+            </div>
+            <div class="input-field">
+              <i class="material-icons prefix">password</i>
+              <input type="password" id="password">
+              <label for="password">Password...</label>
+            </div>
+            </form>
+        <div class="modal-footer">
+          <a href="#" class="modal-close btn orange" onclick="checkLogin()">Login</a>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="auth_demo.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".modal").modal();
+      });
+    </script>
+  </body>
+</html>
