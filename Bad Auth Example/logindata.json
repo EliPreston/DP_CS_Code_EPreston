@@ -10,6 +10,14 @@
 	{
 		"uID": "u3@example.com",
 		"password": "pword3"
+	},
+	{
+		"uID": "u4@example.co",
+		"password": "pword4"
+	},
+	{
+		"uID": "u5@example.co",
+		"password": "pword5"
 	}
 
 ]
