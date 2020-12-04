@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> </title>
+
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <label for="uId">User number:</label>
+        <input type="text" id="uId" name="uId" />
+
+        <label for="uName">Username:</label>
+        <input type="text" id="uName" name="uName" />
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" />
+      </form>
+      <a href="#" class="btn" onclick="writeUserData()">Update user info</a>
+    </div>
+
+    <br />
+    <br />
+    <br />
+
+    <div class="container">
+      <p id="uIdOutput">ID</p>
+      <p id="uNameOutput">Name</p>
+      <p id="emailOutput">Email</p>
+    </div>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-analytics.js"></script>
+
+    <!--ADDED: COPY OTHER IMPORT AND CHANCE TO DATABASE-->
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-analytics.js"></script>
+    <script src="firebaseDemo.js"></script>
+  </body>
+</html>
