@@ -1,3 +1,44 @@
+
+
+# total = []
+
+# vertical1 = 0
+# vertical2 = 0
+# vertical3 = 0
+# vertical4 = 0
+
+# count = 0
+# for i in range(0, 4, 1):
+#     horizontal = 0
+#     new = input()
+#     line = new.split()
+
+#     vertical1 += int(line[0])
+#     vertical2 += int(line[1])
+#     vertical3 += int(line[2])
+#     vertical4 += int(line[3])
+
+#     for i in range(0, len(line), 1):
+#         horizontal += int(line[i])
+#     total.append(horizontal)
+
+# total.append(vertical1)
+# total.append(vertical2)
+# total.append(vertical3)
+# total.append(vertical4)
+
+
+# for i in range(len(total)):
+#     if total[0] != total[i]:
+#         count += 1
+
+# if count == 0:
+#     print("magic")
+# else:
+#     print("not magic")
+
+# ************************************
+
 in1 = input()
 in2 = input()
 in3 = input()
@@ -9,32 +50,32 @@ list3 = in3.split()
 list4 = in4.split()
 
 
-add1 = 0
+horizontal1 = 0
 for i in list1:
     i = float(i)
-    add1 += i
+    horizontal1 += i
 
-add2 = 0
+horizontal2 = 0
 for i in list1:
     i = float(i)
-    add2 += i
+    horizontal2 += i
 
-add3 = 0
+horizontal3 = 0
 for i in list1:
     i = float(i)
-    add3 += i
+    horizontal3 += i
 
-add4 = 0
+horizontal4 = 0
 for i in list1:
     i = float(i)
-    add4 += i
+    horizontal4 += i
 
 
-if add1 == add2 == add3 == add4:
+if horizontal1 == horizontal2 == horizontal3 == horizontal4:
 
     count = 0
 
-    for i in range(0, len(list1), 1):
+    for i in range(0, 4, 1):
         t1 = list1[i]
         t1 = float(t1)
 
@@ -49,7 +90,7 @@ if add1 == add2 == add3 == add4:
 
         column = t1 + t2 + t3 + t4
 
-        if column == add1:
+        if column == horizontal1:
             count += 1
 
     if count == 4:
